@@ -1,0 +1,77 @@
+@import './../../../css/common.css';
+/*-------------*/
+.sign_in_page {
+  height: 100dvh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sign_in_page .sign_in_content {
+  padding-top: 100px;
+  padding: 100px 50px 0 50px;
+  width: 100%;
+  max-width: 600px;
+  height: 600px;
+  background: #fff;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.sign_in_page .sign_in_content h1 {
+  font-size: 48px;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+.sign_in_page .sign_in_content form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 25px;
+  width: 100%;
+}
+.sign_in_page .sign_in_content form input {
+  padding: 15px;
+  border: 2px solid #000;
+  border-radius: 10px;
+  font-size: 18px;
+  width: 100%;
+}
+.sign_in_page .sign_in_content form input::-moz-placeholder {
+  font-weight: 500;
+}
+.sign_in_page .sign_in_content form input::placeholder {
+  font-weight: 500;
+}
+.sign_in_page .sign_in_content form a {
+  color: #000;
+  font-size: 18px;
+  font-weight: 600;
+  align-self: flex-start;
+  padding-left: 10px;
+}
+.sign_in_page .sign_in_content form button {
+  display: block;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 22px;
+  width: 100%;
+  text-align: center;
+  background: #4A85CE;
+  color: #fff;
+  font-weight: 600;
+}/*# sourceMappingURL=sign_in.css.map */
+.link-button {
+  background: none;
+  border: none;
+  color: #007bff;
+  text-decoration: underline;
+  cursor: pointer;
+  padding: 0;
+  font: inherit;
+}
+
+.link-button:hover {
+  color: #0056b3;
+}

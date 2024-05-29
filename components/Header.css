@@ -1,0 +1,17 @@
+/* Header и Navigation Styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #f6f1e5;
+  }
+  
+  .burger-menu {
+    /* Стили для бургер-меню */
+  }
+  
+  .user-icon {
+    /* Стили для иконки пользователя */
+  }
+  

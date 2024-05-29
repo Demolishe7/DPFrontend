@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.baea2d1a.css",
+    "main.js": "/static/js/main.bf9fcfde.js",
+    "static/media/stairs.png": "/static/media/stairs.c39f66ccb22b373f6399.png",
+    "static/media/project.png": "/static/media/project.9b61cdc3325c578baf89.png",
+    "static/media/yoga.jpeg": "/static/media/yoga.3975125de8b533c660a0.jpeg",
+    "static/media/image1.png": "/static/media/image1.4ddda710f8952cdf5113.png",
+    "static/media/image2.png": "/static/media/image2.e79fc1491adce01f91e9.png",
+    "static/media/back.png": "/static/media/back.ca192279c3f8e82b06cd.png",
+    "static/media/image3.png": "/static/media/image3.dc4b7d5671b63f12a920.png",
+    "static/media/dekor.png": "/static/media/dekor.04ab6e52b00a6bdaebd7.png",
+    "static/media/target_font.svg?3yyrx2": "/static/media/target_font.e0bbaee7898d882abcb6.svg",
+    "static/media/target_font.eot?3yyrx2": "/static/media/target_font.9394913d5be6aae701fb.eot",
+    "static/media/target_font.woff?3yyrx2": "/static/media/target_font.c82ecd69a7787b39cf3b.woff",
+    "static/media/target_font.ttf?3yyrx2": "/static/media/target_font.21b9d90b9e37f3baec71.ttf",
+    "index.html": "/index.html",
+    "main.baea2d1a.css.map": "/static/css/main.baea2d1a.css.map",
+    "main.bf9fcfde.js.map": "/static/js/main.bf9fcfde.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.baea2d1a.css",
+    "static/js/main.bf9fcfde.js"
+  ]
+}

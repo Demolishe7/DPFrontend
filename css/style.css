@@ -1,0 +1,327 @@
+@charset "UTF-8";
+/*----------Основные цвета-------------*/
+/*-------------Миксины----------------*/
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&display=swap");
+
+/*-------Обнуление-------------*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+[inert], [inert] * {
+  opacity: 0.3;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  font-size: 100%;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0%;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+  color: #000;
+  overflow-x: hidden;
+  background: #F6F1E5;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+  background: transparent;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+  background: transparent;
+}
+
+a, a:visited {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+input {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:active,
+input:-webkit-autofill:focus {
+  background-color: #fff !important;
+  color: #000 !important;
+  -webkit-text-fill-color: #000 !important;
+  -webkit-transition: background-color 0s 600000s, color 0s 600000s;
+  transition: background-color 0s 600000s, color 0s 600000s;
+  caret-color: #000;
+}
+
+body {
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+/*-------------Иконки---------------*/
+@font-face {
+  font-family: "target_font";
+  src: url("../fonts/target_font.eot?3yyrx2");
+  src: url("../fonts/target_font.eot?3yyrx2#iefix") format("embedded-opentype"), url("../fonts/target_font.ttf?3yyrx2") format("truetype"), url("../fonts/target_font.woff?3yyrx2") format("woff"), url("../fonts/target_font.svg?3yyrx2#target_font") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^=target_icon_], [class*=" target_icon_"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "target_font" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.target_icon_plus:before {
+  content: "\e900";
+}
+
+.target_icon_star:before {
+  content: "\e901";
+  font-size: 30px;
+}
+
+.target_icon_user:before {
+  content: "\e902";
+  font-size: 25px;
+}
+
+/*----------Общие элементы-----------*/
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 15px;
+  flex: 1; /* This allows the container to grow and fill the available space */
+  display: flex;
+  flex-direction: column;
+}
+
+.common_item {
+  /* padding: 10px 15px; */
+  border-radius: 30px;
+  border: 2px solid #000;
+  width: 100%;
+  font-size: 24px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  box-shadow: 0 6px 0 0 #FAA88B, inset 4px 3px 6px 0 rgba(0, 0, 0, 0.431372549);
+}
+
+.common_button {
+  padding: 5px 15px;
+  padding-bottom: 7px;
+  font-size: 18px;
+  font-weight: 500;
+  border: 2px solid #000;
+  border-radius: 15px;
+  transition: 0.2s;
+  width: max-content;
+}
+.common_button:hover {
+  background: #FAA88B;
+}
+
+.decoration {
+  position: absolute;
+  bottom: 0;
+  left: 0px;
+  width: auto;
+  height: auto;
+}
+
+/*-------------Sign In Page---------------*/
+.sign_in_page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.sign_in_content {
+  background-color: #f5f5f5;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+}
+
+.sign_in_page h1 {
+  margin-bottom: 1rem;
+}
+
+.sign_in_page input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.sign_in_page button {
+  width: 100%;
+  padding: 0.5rem;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.sign_in_page button:hover {
+  background-color: #555;
+}
+
+.sign_in_page .error {
+  color: red;
+  margin-top: 1rem;
+  text-align: center;
+}
+.burger_wrapper {
+  position: relative;
+}
+
+.burger {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 20px;
+  background: transparent;
+  border: none;
+}
+
+.burger span {
+  width: 100%;
+  height: 2px;
+  background: #000;
+  border-radius: 10px;
+}
+
+.burger_list {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  display: none;
+  flex-direction: column;
+  background: #f6f1e5;
+  padding: 10px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.burger_list.open {
+  display: flex;
+}
+
+.burger_list a {
+  padding: 10px;
+  text-decoration: none;
+  color: #000;
+}
+
+.burger_list a:hover {
+  background: #ddd;
+}
+/* Стили для выпадающих списков */
+.common_item select {
+  padding: 10px 15px;
+  border-radius: 30px;
+  border: 2px solid #000;
+  width: 100%;
+  font-size: 24px;
+  font-weight: 500;
+  box-shadow: 0 6px 0 0 #FAA88B, inset 4px 3px 6px 0 rgba(0, 0, 0, 0.431372549);
+  appearance: none;
+  background-color: #fff;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10"><path fill="none" stroke="%23000" stroke-width="2" d="M1 3.5l4 4 4-4"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 15px top 50%;
+  background-size: 10px 10px;
+}
+
+.common_item select::-ms-expand {
+  display: none;
+}
+
+.common_item select:hover {
+  background-color: #FAA88B;
+}
+
+/* Дополнительные стили для корректного отображения */
+.common_item.no_shadow {
+  box-shadow: none;
+}
+
+.common_item {
+  overflow: hidden; /* Убираем элементы, выходящие за границы */
+}

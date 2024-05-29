@@ -1,0 +1,150 @@
+@import './common';
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&display=swap');
+//@import url('https://fonts.googleapis.com/css2?family=Margarine&display=swap');
+/*-------Обнуление-------------*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+[inert], [inert] * {opacity: 0.3;}
+
+html,body{
+	max-width: 100%;
+	min-width: 288px;
+	font-size: 100%;
+	font-weight: 400;
+	line-height: 1;
+    letter-spacing: 0%;
+	font-size: 16px;
+	//font-family: "Margarine", sans-serif;
+    font-family: "Open Sans", sans-serif;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	scroll-behavior: smooth;
+    color: #000;
+    overflow-x: hidden;
+    background: $beige;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;background: transparent}
+button::-moz-focus-inner {padding:0;border:0;background: transparent}
+a, a:visited{text-decoration: none; color: #fff;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+
+input {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:active,
+input:-webkit-autofill:focus {
+    background-color: #fff !important;
+    color: #000 !important;
+    -webkit-text-fill-color: #000 !important;
+    transition: background-color 0s 600000s, color 0s 600000s;
+    caret-color: #000;
+}
+
+body {
+	min-height: 100dvh;
+	position: relative;
+}
+
+/*-------------Иконки---------------*/
+@font-face {
+	font-family: 'target_font';
+	src:  url('../fonts/target_font.eot?3yyrx2');
+	src:  url('../fonts/target_font.eot?3yyrx2#iefix') format('embedded-opentype'),
+	  url('../fonts/target_font.ttf?3yyrx2') format('truetype'),
+	  url('../fonts/target_font.woff?3yyrx2') format('woff'),
+	  url('../fonts/target_font.svg?3yyrx2#target_font') format('svg');
+	font-weight: normal;
+	font-style: normal;
+	font-display: block;
+  }
+  
+  [class^="target_icon_"], [class*=" target_icon_"] {
+	/* use !important to prevent issues with browser extensions that change fonts */
+	font-family: 'target_font' !important;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+  
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+  }
+  
+  .target_icon_plus:before {
+	content: "\e900";
+  }
+  .target_icon_star:before {
+	content: "\e901";
+	font-size: 30px;
+  }
+  .target_icon_user:before {
+	content: "\e902";
+	font-size: 25px;
+  }
+  
+/*----------Общие элементы-----------*/
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.common_item{
+	padding: 10px 15px;
+	border-radius: 30px;
+	border: 2px solid #000;
+	width: 100%;
+	font-size: 24px;
+	font-weight: 500;
+	display: flex;
+	align-items: center;
+	gap: 30px;
+	box-shadow: 0 6px 0 0 #FAA88B, inset 4px 3px 6px 0 #0000006e;
+}
+
+.common_button{
+	padding: 5px 15px;
+	padding-bottom: 7px;
+	font-size: 18px;
+	font-weight: 500;
+	border: 2px solid #000;
+	border-radius: 15px;
+	transition: 0.2s;
+	width: max-content;
+	&:hover{
+		background: $lightOrange;
+	}
+}
+
+.decoration{
+	position: absolute;
+	bottom: 0;
+	left: 0px;
+	width: auto;
+	height: auto;
+}

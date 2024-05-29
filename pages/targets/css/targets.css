@@ -1,0 +1,113 @@
+@charset "UTF-8";
+/*----------Основные цвета-------------*/
+/*-------------Миксины----------------*/
+/**/
+.targets_block {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Исправлено d на vh */
+  padding-top: 100px;
+}
+
+.targets_block::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 50px;
+  background: #FAA88B;
+}
+
+.targets_block .container {
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+}
+
+.targets_block .container .target_content {
+  flex: 1;
+}
+
+.targets_block .container .target_content .common_item.no_shadow {
+  /* padding: 0 15px; */
+  box-shadow: inset 4px 3px 6px 0 rgba(0, 0, 0, 0.431372549);
+  overflow: hidden; /* Добавлено */
+}
+
+.targets_block .container .target_content .common_item.no_shadow p {
+  padding: 10px 0;
+  padding-right: 30px;
+  border-right: 2px solid #000;
+}
+
+.targets_block .container .target_content .target_items_block .common_item {
+  padding: 0px 15px;
+  overflow: hidden; /* Добавлено */
+}
+
+.targets_block .container .target_content .target_items_block .common_item input {
+  width: 100%;
+  height: 100%;
+  padding: 10px 0;
+  background: transparent;
+  font-size: 24px;
+  line-height: 0.8;
+  font-weight: 500;
+}
+
+.targets_block h2 {
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 1;
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+
+.targets_block .target_items_block {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+  gap: 30px;
+}
+
+.targets_block .image {
+  flex: 1;
+  max-width: 400px;
+}
+
+.targets_block .image img {
+  width: 100%;
+}
+
+.decoration {
+  z-index: 0; /* Чтобы изображение было ниже всех элементов */
+}
+
+/* Стили для выпадающих списков */
+.common_item select {
+  padding: 10px 15px;
+  border-radius: 30px;
+  border: 2px solid #000;
+  /* border-bottom: 50px; */
+  /* width: calc(100% - 32px); Учтены внутренние отступы */
+  font-size: 24px;
+  font-weight: 500;
+  box-shadow: 0 6px 0 0 #FAA88B, inset 4px 3px 6px 0 rgba(0, 0, 0, 0.431372549);
+  appearance: none;
+  background-color: #fff;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10"><path fill="none" stroke="%23000" stroke-width="2" d="M1 3.5l4 4 4-4"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 15px top 50%;
+  background-size: 10px 10px;
+}
+
+.common_item select::-ms-expand {
+  display: none;
+}
+
+.common_item select:hover {
+  background-color: #FAA88B;
+}

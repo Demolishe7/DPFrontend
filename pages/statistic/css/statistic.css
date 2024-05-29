@@ -1,0 +1,74 @@
+/* src/pages/statistic/css/statistic.css */
+.statistic_block {
+  padding: 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  margin-top: 30px; /* Добавляем отступ сверху */
+}
+
+.project_block {
+  background: #f4f4f4;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+.project_block h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #007bff;
+  text-decoration: underline;
+}
+
+.project_block button {
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.project_block button:hover {
+  background-color: #0056b3;
+}
+
+.target_item {
+  display: flex;
+  align-items: center;
+}
+
+.target_item input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.stats {
+  margin-top: 10px;
+}
+
+.stats p {
+  margin: 0;
+  padding: 0;
+}
+
+.overall_stats {
+  margin-bottom: 20px;
+}
+
+.category_block {
+  background: #e0e0e0;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+.category_block h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #007bff;
+}
